@@ -2,11 +2,11 @@
 
 The repo is the source of truth. GitHub Actions builds this site from `docs/` with MkDocs Material, runs the offline tests, and deploys to GitHub Pages on every push to `main`.
 
-**Site:** <https://darolution.github.io/FDT-Training/>
+**Site:** <https://darolution.github.io/FDE-Training/>
 
 ## First push (once)
 
-The repo `darolution/FDT-Training` exists but has no commits yet. From PowerShell:
+For a fresh, empty repo (already done for this one). From PowerShell:
 
 ```powershell
 cd "D:\Claude Docs\FDE-Training"
@@ -19,7 +19,7 @@ git config user.email "you@example.com"     # or your GitHub noreply address
 git status                                   # labs\.env must NOT be listed
 git add .
 git commit -m "Course site and Phase 1 materials"
-git remote add origin https://github.com/darolution/FDT-Training.git
+git remote add origin https://github.com/darolution/FDE-Training.git
 git push -u origin main
 ```
 

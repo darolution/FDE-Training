@@ -23,7 +23,7 @@ py -3.13 --version
 
 ## 2. The repo
 
-The course lives in `D:\Claude Docs\FDE-Training` and publishes to `github.com/darolution/FDT-Training`. First-time git and publishing steps are in [Git and publishing](workflow.md).
+The course lives in `D:\Claude Docs\FDE-Training` and publishes to `github.com/darolution/FDE-Training`. First-time git and publishing steps are in [Git and publishing](workflow.md).
 
 ## 3. Python environment
 

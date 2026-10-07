@@ -1,8 +1,8 @@
 site_name: FDE Training
 site_description: A self-directed path to Forward Deployed Engineer skills, built around Claude, Splunk and security operations.
-site_url: https://darolution.github.io/FDT-Training/
-repo_url: https://github.com/darolution/FDT-Training
-repo_name: darolution/FDT-Training
+site_url: https://darolution.github.io/FDE-Training/
+repo_url: https://github.com/darolution/FDE-Training
+repo_name: darolution/FDE-Training
 edit_uri: edit/main/docs/
 copyright: Training material for personal study. Not affiliated with or endorsed by Anthropic or Splunk.
 

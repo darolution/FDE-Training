@@ -2,7 +2,7 @@
 
 A 24-week, build-first course in Forward Deployed Engineer skills with Claude: API fundamentals, prompting, evals, tool use, agents, MCP, enterprise architecture and customer delivery. Each phase ends in a capstone for a different fictional customer.
 
-**Read it as a site:** https://darolution.github.io/FDT-Training/
+**Read it as a site:** https://darolution.github.io/FDE-Training/
 
 ## Quick start (Windows, PowerShell)
 

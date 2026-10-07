@@ -1,10 +1,10 @@
 # Phase 1 · Foundations
 
-**Weeks 1–4 · about 50 hours.** By the end you can call Claude reliably and cheaply, write prompts that hold up on messy input, prove quality with an eval, and deliver a small system to a customer with the paperwork to match.
+**Weeks 1–4 · about 50 hours.** Before you start: the [setup](../setup/index.md), including an API key with a spend limit. By the end you can call Claude reliably and cheaply, write prompts that hold up on messy input, prove quality with an eval, and deliver a small system to a customer with the paperwork to match.
 
 ## Skip-ahead checkpoint
 
-If you can do all of these without looking anything up, skim Weeks 1–2, do the Week 3 eval lab properly, and go straight to the capstone.
+Coming from Launchpad? Start with Week 1 and don't skip anything. Already built with LLM APIs? If you can do all of these without looking anything up, skim Weeks 1–2, do the Week 3 eval lab properly, and go straight to the capstone.
 
 - [ ] Explain what `stop_reason: "max_tokens"` means and what your code should do about it
 - [ ] Estimate the monthly cost of 10,000 calls a day for a given prompt on two different models
@@ -24,15 +24,15 @@ If you can do all of these without looking anything up, skim Weeks 1–2, do the
 
 ```text
 labs/
-├── fde_common/        shared helpers: config, logged API calls, costs, redaction, Splunk client
-├── data/              datasets: tickets_golden.jsonl, synthetic security telemetry generator
-├── week01/ … week03/  one script per lab, run from the repo root
+├── fde_common/        shared helpers: settings, logged API calls, costs, redaction (plus a Splunk client for the security track)
+├── data/              datasets: support tickets; a security-log generator for the security track
+├── week01/ … week03/  one script per lab, run from the course folder
 ├── capstone1_claims/  the capstone: starter code, golden set, eval harness, spec tests
 └── tests/             offline tests (python -m pytest)
 ```
 
-Run every lab from the **repo root** with the venv active, for example `python labs\week01\01_hello.py`.
+Run every lab from the **course folder** with your virtual environment active, for example `python labs/week01/01_hello.py`.
 
 ## Budget
 
-Running every Phase 1 lab once costs a few dollars. Iterating on the capstone prompt with the default model adds a few more. Check `python labs\week01\06_usage_report.py` at the end of each week.
+Running every Phase 1 lab once costs a few dollars. Iterating on the capstone prompt with the default model adds a few more. Check `python labs/week01/06_usage_report.py` at the end of each week.

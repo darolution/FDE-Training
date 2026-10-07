@@ -23,8 +23,8 @@ response = llm.call(
     label="w1.hello",
     model=m.fast,
     max_tokens=300,
-    system="You are a senior SOC analyst. Answer in at most three sentences.",
-    messages=[{"role": "user", "content": "In plain terms, what is a SIEM correlation search?"}],
+    system="You are an experienced customer-support team lead. Answer in at most three sentences.",
+    messages=[{"role": "user", "content": "In plain terms, what is a service-level agreement (SLA) for support tickets?"}],
 )
 
 print(llm.text_of(response))

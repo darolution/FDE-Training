@@ -31,7 +31,7 @@ flowchart LR
 
 **Graders**, cheapest first:
 
-1. **Code**: exact match, set membership, ranges, regexes, "does the SPL parse". Fast, free, deterministic. Use them wherever you can.
+1. **Code**: exact match, set membership, ranges, regexes, "does the output parse". Fast, free, deterministic. Use them wherever you can.
 2. **LLM-as-judge**: for free text (is this summary faithful?). Use a strong model, a narrow rubric and structured output, and **calibrate it against your own labels** before you trust it.
 3. **Human review**: for the cases the first two flag, and to keep the judge honest.
 
@@ -50,10 +50,10 @@ flowchart LR
 
 | Lab | Run | What you learn |
 |---|---|---|
-| 1 | `python labs\week03\run_eval.py --model fast` | Per-field accuracy, critical misses, cost, p50/p95 latency |
-| 1b | `python labs\week03\run_eval.py --model fast --repeats 3` | Stability across repeats |
-| 2 | `python labs\week03\compare_runs.py <runA.json> <runB.json>` | What a prompt change fixed and what it broke |
-| 3 | `python labs\week03\judge.py --run labs\runs\w2_triage_fast.jsonl` | LLM-as-judge for summaries, then calibrate it against your own grades |
+| 1 | `python labs/week03/run_eval.py --model fast` | Per-field accuracy, critical misses, cost, p50/p95 latency |
+| 1b | `python labs/week03/run_eval.py --model fast --repeats 3` | Stability across repeats |
+| 2 | `python labs/week03/compare_runs.py <runA.json> <runB.json>` | What a prompt change fixed and what it broke |
+| 3 | `python labs/week03/judge.py --run labs/runs/w2_triage_fast.jsonl` | LLM-as-judge for summaries, then calibrate it against your own grades |
 
 ??? example "The grader (code-based, unit tested)"
     ```python
@@ -62,15 +62,15 @@ flowchart LR
 
 ### Exercises
 
-1. **Model selection.** Run the eval on `fast` and `default`. Fill in the table below and write a three-sentence recommendation to Northwind's support director.
+1. **Core · Model selection.** Run the eval on `fast` and `default`. Fill in the table below and write a three-sentence recommendation to Northwind's support director.
 
     | Model | All fields correct | Critical misses | p95 latency | Cost per 1,000 tickets |
     |---|---|---|---|---|
     | | | | | |
 
-2. **Fix a failure properly.** Pick the most common failing field. Change the prompt once, re-run, and use `compare_runs.py`. Did anything regress?
-3. **Grow the golden set.** Add four tickets that you think will break the current prompt (sarcasm, two requests in one ticket, an order id with a typo, a French injection attempt). Label them *before* running. How many did you predict correctly?
-4. **Gate it.** Find the highest `--min-accuracy` your best prompt passes reliably over three runs. That's a defensible acceptance criterion.
+2. **Core · Fix a failure properly.** Pick the most common failing field. Change the prompt once, re-run, and use `compare_runs.py`. Did anything regress?
+3. **Stretch · Grow the golden set.** Add four tickets that you think will break the current prompt (sarcasm, two requests in one ticket, an order id with a typo, a French injection attempt). Label them *before* running. How many did you predict correctly?
+4. **Stretch · Gate it.** Find the highest `--min-accuracy` your best prompt passes reliably over three runs. That's a defensible acceptance criterion.
 
 ## Checkpoint
 

@@ -2,7 +2,7 @@
 
     python labs/week01/05_multi_turn.py
 
-The API is stateless: you resend the whole conversation every turn. Watch
+The API is stateless: you resend the whole conversation every turn. Watch the
 input tokens climb. This is why long-running agents need context management.
 """
 
@@ -17,12 +17,14 @@ from fde_common.costs import cost_usd, fmt_usd  # noqa: E402
 
 m = models()
 c = llm.client()
-system = "You are helping a SIEM engineer investigate an alert. Be brief (under 120 words per answer)."
+system = ("You are helping a support agent at an online outdoor-gear store handle an escalation. "
+          "Be brief (under 120 words per answer).")
 questions = [
-    "An alert fired: 40 failed VPN logins for one user from 203.0.113.45, then a success. First three checks?",
-    "The source IP geolocates to Romania; the user is based in Toronto. Does that change your priority?",
-    "Write the SPL to list every event from that IP in the last 24 hours, newest first.",
-    "Draft a two-sentence update for the incident ticket.",
+    "A customer says their order NW-102998 has been delayed three times and wants a full $640 refund today, "
+    "or they'll dispute the charge with their bank. What are my first three steps?",
+    "The order is stuck at the carrier and can't be recovered this week. Does that change what I should offer?",
+    "Draft a short, calm reply to the customer.",
+    "Write a two-sentence internal note for the ticket.",
 ]
 
 history: list[dict] = []

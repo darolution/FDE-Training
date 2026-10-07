@@ -1,10 +1,10 @@
 site_name: FDE Training
-site_description: A self-directed path to Forward Deployed Engineer skills, built around Claude, Splunk and security operations.
+site_description: A free, build-first course from first line of code to Forward Deployed Engineer skills with Claude.
 site_url: https://darolution.github.io/FDE-Training/
 repo_url: https://github.com/darolution/FDE-Training
 repo_name: darolution/FDE-Training
 edit_uri: edit/main/docs/
-copyright: Training material for personal study. Not affiliated with or endorsed by Anthropic or Splunk.
+copyright: Lesson text CC BY 4.0 · Code MIT · Independent course, not affiliated with or endorsed by Anthropic or any company named.
 
 theme:
   name: material
@@ -77,11 +77,23 @@ nav:
       - index.md
       - Syllabus: syllabus.md
       - Course rules: rules.md
+      - Costs: costs.md
+      - Glossary: glossary.md
       - Progress log: progress.md
   - Setup:
       - setup/index.md
-      - Splunk lab: setup/splunk-lab.md
-      - Git and publishing: setup/workflow.md
+      - Your own copy (optional): setup/your-own-copy.md
+      - "Splunk lab (security track)": setup/splunk-lab.md
+  - Launchpad:
+      - launchpad/index.md
+      - "L1 · Your computer as a workshop": launchpad/l1-terminal.md
+      - "L2 · Python 1: values and variables": launchpad/l2-python-basics.md
+      - "L3 · Python 2: lists, loops, functions": launchpad/l3-python-data.md
+      - "L4 · Python 3: files, JSON, errors": launchpad/l4-python-files.md
+      - "L5 · Git and GitHub": launchpad/l5-git.md
+      - "L6 · The web and APIs": launchpad/l6-apis.md
+      - "L7 · Working with AI tools": launchpad/l7-ai-tools.md
+      - "L8 · Launchpad project": launchpad/l8-project.md
   - "Phase 1":
       - phase-1/index.md
       - "Week 1 · Claude API essentials": phase-1/week-01.md

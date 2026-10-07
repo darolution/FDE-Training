@@ -26,7 +26,7 @@ with c.messages.stream(
     max_tokens=800,
     messages=[{
         "role": "user",
-        "content": "Write a short runbook (6 numbered steps) for triaging a password-spray alert in Splunk.",
+        "content": "Write a short checklist (6 numbered steps) for replying to a customer whose order is two weeks late.",
     }],
 ) as stream:
     for text in stream.text_stream:

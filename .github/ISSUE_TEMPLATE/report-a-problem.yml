@@ -1,0 +1,48 @@
+name: Report a problem
+description: A mistake in a lesson, a lab that doesn't work, a broken link, or something unclear.
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the course. **Never paste API keys, passwords or personal data here.** Issues are public.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - A lab or exercise doesn't run
+        - Something in a lesson is wrong or out of date
+        - Something is unclear or hard to follow
+        - Broken link
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where?
+      description: Page link or lab file, e.g. https://darolution.github.io/FDE-Training/phase-1/week-01/ or labs/week01/02_count_tokens.py
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: For errors, paste the last few lines of the message (remove anything secret first).
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Your operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Not relevant
+  - type: input
+    id: python
+    attributes:
+      label: Python version (if it's a lab problem)
+      description: Output of `python --version` with your virtual environment active

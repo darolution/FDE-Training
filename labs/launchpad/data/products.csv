@@ -1,0 +1,11 @@
+sku,name,category,price,stock
+TENT-2P,2-person tent,shelter,249.00,12
+BAG-10,Sleeping bag -10C,sleep,179.00,3
+PACK-45,45L backpack,packs,159.00,7
+LAMP-400,Headlamp 400,lighting,39.00,40
+STOVE-1,Camp stove,cooking,89.00,0
+BOTTLE-1,Water bottle,hydration,19.00,120
+BOOT-M,Hiking boots,footwear,189.00,5
+POLE-2,Trekking poles (pair),hiking,79.00,9
+JACKET-R,Rain jacket,clothing,139.00,2
+MAT-1,Sleeping mat,sleep,69.00,15

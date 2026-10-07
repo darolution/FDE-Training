@@ -1,9 +1,12 @@
 # Week 4 · Capstone 1: Claims intake for Lakeshore Mutual
 
-**Time box: 15 hours.** Run it like an engagement, not an exercise: discovery, build, evals, security review, handover. There's no reference solution. **The eval is the judge**, as in the Residency assessment.
+**Time box: 15 hours** (allow 20 if this is your first project of this size). Run it like an engagement, not an exercise: discovery, build, evals, security review, handover. There's no reference solution. **The eval is the judge**, as in the Residency assessment.
 
 !!! abstract "The customer"
     **Lakeshore Mutual** (fictional) is a mid-sized Ontario property and casualty insurer. First notice of loss (FNOL) arrives as free-text email in English and French. Three intake clerks read every email, re-key it into the claims system and decide which team gets it. Volume is about 400 emails a day; the backlog peaks at two days after storms. The VP Claims wants the triage automated. Adjusters will still own every decision on the claim itself.
+
+!!! tip "Where your write-ups go"
+    The capstone asks for a few short documents. Keep them in a `docs/notes/` folder in the course folder. If you're working in your own fork, commit them there: they become part of your portfolio. See [Your own copy](../setup/your-own-copy.md).
 
 ## 1. Discovery (2 hours)
 
@@ -51,17 +54,18 @@ Suggested order:
 
 1. **Rules first.** Implement `parse_date()` and `route()` until `python -m pytest -m capstone` is green. No API calls needed. This is the part adjusters will read, so keep it boring and clear.
 2. **Prompt second.** Write `SYSTEM_PROMPT` in `extractor.py`. Then iterate:
-    ```powershell
-    python labs\capstone1_claims\evals\run_evals.py --model default
+    ```bash
+    python labs/capstone1_claims/evals/run_evals.py --model default
     ```
     Fix the most common failure, re-run, repeat. Keep a log of each change and its effect in your notes.
+
 3. **Try the cheap model.** Once `default` passes, run `--model fast`. Does it still meet A1 and A2? What's the cost difference per month?
 4. **Run the pipeline** end to end:
-    ```powershell
-    cd labs\capstone1_claims
-    python -m claims_intake.cli data\claims_golden.jsonl --model default
+    ```bash
+    cd labs/capstone1_claims
+    python -m claims_intake.cli data/claims_golden.jsonl --model default
     ```
-    Open `labs\runs\capstone1\queue.csv`. Would Marc's clerks understand every `reasons` column?
+    Open `labs/runs/capstone1/queue.csv`. Would Marc's clerks understand every `reasons` column?
 
 ??? tip "Hints if you're stuck"
     - Dates: put `received_at` in the email you send (it already is) and tell the model to resolve relative dates against it.
@@ -74,7 +78,7 @@ Suggested order:
 Write `docs/notes/capstone1-security-review.md` for Owen. Cover at least:
 
 - **Data flow:** what leaves the environment (email text, after redaction, to the Claude API), what's stored (`queue.*`, `audit.jsonl`), what's never stored (email bodies in logs).
-- **Prompt injection:** C-07 plants an attack. Show the result, then write **three new attack emails** (for example: in French, hidden in a quoted reply chain, claiming to come from an adjuster). Add them, labelled in the same format as the golden set, to a separate `data/redteam.jsonl`. Run them with `run_evals.py --data labs\capstone1_claims\data\redteam.jsonl` and report what happened.
+- **Prompt injection:** C-07 plants an attack. Show the result, then write **three new attack emails** (for example: in French, hidden in a quoted reply chain, claiming to come from an adjuster). Add them, labelled in the same format as the golden set, to a separate `data/redteam.jsonl`. Run them with `run_evals.py --data labs/capstone1_claims/data/redteam.jsonl` and report what happened.
 - **Blast radius:** what's the worst a successful injection could do *in this design*? (Hint: the model only extracts. Routing is code, and nothing is written to the claims system. Say why that matters.)
 - **Residual risks and mitigations:** for example, PII in the extracted `description` field, or the redaction module's limits.
 
@@ -85,6 +89,6 @@ Fill in the [handover template](../reference/handover-template.md) as `docs/note
 ## Done when
 
 - [ ] A1–A5 met, with numbers in your handover doc
-- [ ] Discovery, security review and handover notes committed and linked in `mkdocs.yml`
+- [ ] Discovery, security review and handover notes written (and committed, if you have your own fork)
 - [ ] Demo recorded
 - [ ] A short "what I'd do differently" paragraph. Interviewers ask for this

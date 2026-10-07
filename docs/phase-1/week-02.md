@@ -71,17 +71,17 @@ Check `usage.cache_creation_input_tokens` and `usage.cache_read_input_tokens` to
 
 | Lab | Run | What you learn |
 |---|---|---|
-| 1 | `python labs\week02\01_prompt_ladder.py` | Three prompts, same schema, eight tickets: watch which fields improve as instructions get specific |
-| 2 | `python labs\week02\02_structured_triage.py --model fast` | Triage all 24 tickets; results saved for Week 3's judge |
-| 3 | `python labs\week02\03_prompt_caching.py` | Cache write vs read, and the saving in dollars |
-| Stretch | `python labs\week02\04_stretch_soc_triage.py` | **Security track:** triage alerts built from the synthetic SIEM data, including one with injection text in a user-agent |
+| 1 | `python labs/week02/01_prompt_ladder.py` | Three prompts, same schema, eight tickets: watch which fields improve as instructions get specific |
+| 2 | `python labs/week02/02_structured_triage.py --model fast` | Triage all 24 tickets; results saved for Week 3's judge |
+| 3 | `python labs/week02/03_prompt_caching.py` | Cache write vs read, and the saving in dollars |
+| Stretch | `python labs/week02/04_stretch_soc_triage.py` | **Security track:** triage alerts built from the synthetic SIEM data, including one with injection text in a user-agent |
 
 ### Exercises
 
-1. In the ladder, prompt **B** usually misses `needs_human` and injection. Add *one* sentence to B that fixes the injection flag without adding the full rules. What did you learn about which instructions carry the most weight?
-2. T-024 tries to change its own category. Does your model obey any part of it? Read its summary closely.
-3. Add a new category, `warranty`, to the enum and prompt. Which existing tickets move? Is that what the business would want? (This is a scope conversation, not a prompt tweak.)
-4. Run Lab 2 with `--model default` and compare five tickets side by side. Don't judge which is "better" yet; Week 3 gives you the tools.
+1. **Core.** In the ladder, prompt **B** usually misses `needs_human` and injection. Add *one* sentence to B that fixes the injection flag without adding the full rules. What did you learn about which instructions carry the most weight?
+2. **Core.** T-024 tries to change its own category. Does your model obey any part of it? Read its summary closely.
+3. **Stretch.** Add a new category, `warranty`, to the enum and prompt. Which existing tickets move? Is that what the business would want? (This is a scope conversation, not a prompt tweak.)
+4. **Core.** Run Lab 2 with `--model default` and compare five tickets side by side. Don't judge which is "better" yet; Week 3 gives you the tools.
 
 ## Checkpoint
 

@@ -1,0 +1,416 @@
+[
+  {
+    "id": "A-1001",
+    "customer": "Ava Chen",
+    "country": "CA",
+    "status": "cancelled",
+    "created": "2026-09-01",
+    "items": [
+      {
+        "sku": "JACKET-R",
+        "name": "Rain jacket",
+        "qty": 2,
+        "price": 139.0
+      }
+    ]
+  },
+  {
+    "id": "A-1002",
+    "customer": "Ben Okafor",
+    "country": "CA",
+    "status": "processing",
+    "created": "2026-09-02",
+    "items": [
+      {
+        "sku": "MAT-1",
+        "name": "Sleeping mat",
+        "qty": 1,
+        "price": 69.0
+      }
+    ]
+  },
+  {
+    "id": "A-1003",
+    "customer": "Chloé Martin",
+    "country": "CA",
+    "status": "shipped",
+    "created": "2026-09-03",
+    "items": [
+      {
+        "sku": "MAT-1",
+        "name": "Sleeping mat",
+        "qty": 1,
+        "price": 69.0
+      }
+    ]
+  },
+  {
+    "id": "A-1004",
+    "customer": "Dev Patel",
+    "country": "US",
+    "status": "cancelled",
+    "created": "2026-09-04",
+    "items": [
+      {
+        "sku": "MAT-1",
+        "name": "Sleeping mat",
+        "qty": 1,
+        "price": 69.0
+      },
+      {
+        "sku": "BOOT-M",
+        "name": "Hiking boots",
+        "qty": 1,
+        "price": 189.0
+      },
+      {
+        "sku": "TENT-2P",
+        "name": "2-person tent",
+        "qty": 1,
+        "price": 249.0
+      }
+    ]
+  },
+  {
+    "id": "A-1005",
+    "customer": "Elif Yilmaz",
+    "country": "US",
+    "status": "delivered",
+    "created": "2026-09-05",
+    "items": [
+      {
+        "sku": "BOOT-M",
+        "name": "Hiking boots",
+        "qty": 1,
+        "price": 189.0
+      },
+      {
+        "sku": "PACK-45",
+        "name": "45L backpack",
+        "qty": 1,
+        "price": 159.0
+      }
+    ]
+  },
+  {
+    "id": "A-1006",
+    "customer": "Farah Haddad",
+    "country": "CA",
+    "status": "delivered",
+    "created": "2026-09-06",
+    "items": [
+      {
+        "sku": "PACK-45",
+        "name": "45L backpack",
+        "qty": 1,
+        "price": 159.0
+      },
+      {
+        "sku": "BAG-10",
+        "name": "Sleeping bag -10C",
+        "qty": 1,
+        "price": 179.0
+      },
+      {
+        "sku": "LAMP-400",
+        "name": "Headlamp 400",
+        "qty": 1,
+        "price": 39.0
+      }
+    ]
+  },
+  {
+    "id": "A-1007",
+    "customer": "Gus Ito",
+    "country": "US",
+    "status": "cancelled",
+    "created": "2026-09-07",
+    "items": [
+      {
+        "sku": "TENT-2P",
+        "name": "2-person tent",
+        "qty": 2,
+        "price": 249.0
+      },
+      {
+        "sku": "LAMP-400",
+        "name": "Headlamp 400",
+        "qty": 1,
+        "price": 39.0
+      },
+      {
+        "sku": "POLE-2",
+        "name": "Trekking poles (pair)",
+        "qty": 2,
+        "price": 79.0
+      }
+    ]
+  },
+  {
+    "id": "A-1008",
+    "customer": "Hana Novak",
+    "country": "CA",
+    "status": "delivered",
+    "created": "2026-09-08",
+    "items": [
+      {
+        "sku": "POLE-2",
+        "name": "Trekking poles (pair)",
+        "qty": 1,
+        "price": 79.0
+      },
+      {
+        "sku": "BOTTLE-1",
+        "name": "Water bottle",
+        "qty": 1,
+        "price": 19.0
+      },
+      {
+        "sku": "STOVE-1",
+        "name": "Camp stove",
+        "qty": 1,
+        "price": 89.0
+      }
+    ]
+  },
+  {
+    "id": "A-1009",
+    "customer": "Ivan Petrov",
+    "country": "US",
+    "status": "processing",
+    "created": "2026-09-09",
+    "items": [
+      {
+        "sku": "MAT-1",
+        "name": "Sleeping mat",
+        "qty": 1,
+        "price": 69.0
+      }
+    ]
+  },
+  {
+    "id": "A-1010",
+    "customer": "Jade Wilson",
+    "country": "CA",
+    "status": "delivered",
+    "created": "2026-09-10",
+    "items": [
+      {
+        "sku": "POLE-2",
+        "name": "Trekking poles (pair)",
+        "qty": 1,
+        "price": 79.0
+      },
+      {
+        "sku": "BOTTLE-1",
+        "name": "Water bottle",
+        "qty": 1,
+        "price": 19.0
+      },
+      {
+        "sku": "MAT-1",
+        "name": "Sleeping mat",
+        "qty": 1,
+        "price": 69.0
+      }
+    ]
+  },
+  {
+    "id": "A-1011",
+    "customer": "Ivan Petrov",
+    "country": "US",
+    "status": "shipped",
+    "created": "2026-09-11",
+    "items": [
+      {
+        "sku": "PACK-45",
+        "name": "45L backpack",
+        "qty": 1,
+        "price": 159.0
+      },
+      {
+        "sku": "BOTTLE-1",
+        "name": "Water bottle",
+        "qty": 2,
+        "price": 19.0
+      }
+    ]
+  },
+  {
+    "id": "A-1012",
+    "customer": "Gus Ito",
+    "country": "US",
+    "status": "delivered",
+    "created": "2026-09-12",
+    "items": [
+      {
+        "sku": "BAG-10",
+        "name": "Sleeping bag -10C",
+        "qty": 1,
+        "price": 179.0
+      }
+    ]
+  },
+  {
+    "id": "A-1013",
+    "customer": "Farah Haddad",
+    "country": "CA",
+    "status": "processing",
+    "created": "2026-09-13",
+    "items": [
+      {
+        "sku": "MAT-1",
+        "name": "Sleeping mat",
+        "qty": 2,
+        "price": 69.0
+      },
+      {
+        "sku": "POLE-2",
+        "name": "Trekking poles (pair)",
+        "qty": 1,
+        "price": 79.0
+      }
+    ]
+  },
+  {
+    "id": "A-1014",
+    "customer": "Ben Okafor",
+    "country": "CA",
+    "status": "shipped",
+    "created": "2026-09-14",
+    "items": [
+      {
+        "sku": "POLE-2",
+        "name": "Trekking poles (pair)",
+        "qty": 1,
+        "price": 79.0
+      },
+      {
+        "sku": "BAG-10",
+        "name": "Sleeping bag -10C",
+        "qty": 1,
+        "price": 179.0
+      }
+    ]
+  },
+  {
+    "id": "A-1015",
+    "customer": "Jade Wilson",
+    "country": "CA",
+    "status": "processing",
+    "created": "2026-09-15",
+    "items": [
+      {
+        "sku": "STOVE-1",
+        "name": "Camp stove",
+        "qty": 1,
+        "price": 89.0
+      },
+      {
+        "sku": "BOOT-M",
+        "name": "Hiking boots",
+        "qty": 1,
+        "price": 189.0
+      }
+    ]
+  },
+  {
+    "id": "A-1016",
+    "customer": "Hana Novak",
+    "country": "CA",
+    "status": "delivered",
+    "created": "2026-09-16",
+    "items": [
+      {
+        "sku": "PACK-45",
+        "name": "45L backpack",
+        "qty": 2,
+        "price": 159.0
+      },
+      {
+        "sku": "BAG-10",
+        "name": "Sleeping bag -10C",
+        "qty": 1,
+        "price": 179.0
+      }
+    ]
+  },
+  {
+    "id": "A-1017",
+    "customer": "Dev Patel",
+    "country": "US",
+    "status": "delivered",
+    "created": "2026-09-17",
+    "items": [
+      {
+        "sku": "PACK-45",
+        "name": "45L backpack",
+        "qty": 2,
+        "price": 159.0
+      },
+      {
+        "sku": "LAMP-400",
+        "name": "Headlamp 400",
+        "qty": 2,
+        "price": 39.0
+      }
+    ]
+  },
+  {
+    "id": "A-1018",
+    "customer": "Hana Novak",
+    "country": "CA",
+    "status": "shipped",
+    "created": "2026-09-18",
+    "items": [
+      {
+        "sku": "PACK-45",
+        "name": "45L backpack",
+        "qty": 2,
+        "price": 159.0
+      }
+    ]
+  },
+  {
+    "id": "A-1019",
+    "customer": "Gus Ito",
+    "country": "US",
+    "status": "delivered",
+    "created": "2026-09-19",
+    "items": [
+      {
+        "sku": "STOVE-1",
+        "name": "Camp stove",
+        "qty": 1,
+        "price": 89.0
+      },
+      {
+        "sku": "PACK-45",
+        "name": "45L backpack",
+        "qty": 2,
+        "price": 159.0
+      },
+      {
+        "sku": "BOOT-M",
+        "name": "Hiking boots",
+        "qty": 1,
+        "price": 189.0
+      }
+    ]
+  },
+  {
+    "id": "A-1020",
+    "customer": "Gus Ito",
+    "country": "US",
+    "status": "shipped",
+    "created": "2026-09-20",
+    "items": [
+      {
+        "sku": "PACK-45",
+        "name": "45L backpack",
+        "qty": 1,
+        "price": 159.0
+      }
+    ]
+  }
+]

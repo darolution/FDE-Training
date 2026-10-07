@@ -17,7 +17,7 @@ from fde_common.config import models  # noqa: E402
 
 m = models()
 c = llm.client()
-msg = [{"role": "user", "content": "List ten MITRE ATT&CK tactics, one per line."}]
+msg = [{"role": "user", "content": "List ten common reasons an online order arrives late, one per line."}]
 
 
 def attempt(title, fn):

@@ -10,6 +10,9 @@ The repo `darolution/FDT-Training` exists but has no commits yet. From PowerShel
 
 ```powershell
 cd "D:\Claude Docs\FDE-Training"
+# one-time: put the Pages workflow where GitHub expects it
+New-Item -ItemType Directory -Force .github\workflows | Out-Null
+Move-Item pages.yml.move-me .github\workflows\pages.yml
 git init -b main
 git config user.name "Your Name"
 git config user.email "you@example.com"     # or your GitHub noreply address

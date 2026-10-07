@@ -35,7 +35,7 @@ jobs:
           python -m pip install -r labs/requirements.txt
       - name: Run lab unit tests (offline, no API key needed)
         run: python -m pytest labs -q
-      - name: Build site (strict: broken links fail the build)
+      - name: Build site (strict mode, broken links fail the build)
         run: mkdocs build --strict
       - name: Upload site artifact
         if: github.event_name != 'pull_request'

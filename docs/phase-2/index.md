@@ -6,7 +6,7 @@
 
 | Week | Topic | Key outcomes |
 |---|---|---|
-| 5 | Claude Code as an FDE tool | CLAUDE.md for a customer repo, a custom skill, hooks for guardrails and logging, subagents, `claude -p` in CI. **Checkpoint:** write up your existing guardrail-hooks project as a portfolio piece |
+| 5 | Claude Code as an FDE tool | CLAUDE.md for a customer repo, a custom skill, hooks for guardrails and logging, subagents, `claude -p` in CI. **Portfolio project:** guardrail hooks that detect bypasses (for example, `cat`/`head` via Bash skipping a `Read` hook) and log decisions to Splunk, with tests and a write-up |
 | 6 | Tool use | Tool schemas, strict tool use, parallel calls, writing the agent loop yourself, handling tool errors |
 | 7 | Documents and retrieval | Long context vs RAG, chunking, contextual retrieval, the Files API, citations |
 | 8 | Integrations | REST, webhooks, OAuth client credentials, idempotency keys, retries, Message Batches for bulk work |

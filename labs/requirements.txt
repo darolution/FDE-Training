@@ -1,0 +1,7 @@
+# Lab dependencies. Exact pins, checked against PyPI on 2026-10-06.
+# Install inside the course virtual environment:  python -m pip install -r labs/requirements.txt
+anthropic==1.11.0      # Claude API SDK
+httpx==0.28.1          # HTTP client for Splunk REST + HEC
+pydantic==2.13.5       # Schemas for structured outputs
+python-dotenv==1.2.4   # Loads labs/.env
+pytest==9.1.1          # Offline unit tests

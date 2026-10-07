@@ -1,0 +1,99 @@
+site_name: FDE Training
+site_description: A self-directed path to Forward Deployed Engineer skills, built around Claude, Splunk and security operations.
+site_url: https://darolution.github.io/FDT-Training/
+repo_url: https://github.com/darolution/FDT-Training
+repo_name: darolution/FDT-Training
+edit_uri: edit/main/docs/
+copyright: Training material for personal study. Not affiliated with or endorsed by Anthropic or Splunk.
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.keys
+  - pymdownx.mark
+
+plugins:
+  - search
+
+nav:
+  - Start:
+      - index.md
+      - Syllabus: syllabus.md
+      - Course rules: rules.md
+      - Progress log: progress.md
+  - Setup:
+      - setup/index.md
+      - Splunk lab: setup/splunk-lab.md
+      - Git and publishing: setup/workflow.md
+  - "Phase 1":
+      - phase-1/index.md
+      - "Week 1 · Claude API essentials": phase-1/week-01.md
+      - "Week 2 · Prompting for real work": phase-1/week-02.md
+      - "Week 3 · Evals": phase-1/week-03.md
+      - "Week 4 · Capstone: Claims intake": phase-1/week-04-capstone.md
+  - "Phases 2–5":
+      - "Phase 2 · Production": phase-2/index.md
+      - "Phase 3 · Agents and MCP": phase-3/index.md
+      - "Phase 4 · Architecture": phase-4/index.md
+      - "Phase 5 · Residency sim": phase-5/index.md
+  - Reference:
+      - "Models and pricing": reference/models.md
+      - "The FDE role": reference/fde-role.md
+      - "Handover template": reference/handover-template.md
